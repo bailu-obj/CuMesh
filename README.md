@@ -17,9 +17,12 @@ Key features include:
 ### Build from Source
 
 ```bash
-git clone https://github.com/JeffreyXiang/CuMesh.git --recursive
-pip install CuMesh --no-build-isolation
+# Run from the TRELLIS.2 project root.
+git clone https://github.com/bailu-obj/CuMesh.git --recursive
+bash scripts/install/cumesh.sh
 ```
+
+From the TRELLIS.2 project root, the uv installer builds this checkout against the active project's `.venv`. The Jetson Thor build uses CUDA 13.2, C++20, and SM 11.0; a small CUDA triangle roundtrip passed.
 
 
 ## Quick Start & Modules
